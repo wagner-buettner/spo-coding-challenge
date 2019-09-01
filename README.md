@@ -18,11 +18,10 @@ Output:
 - array of maps which include the optimal number of Juniors and Seniors for ever structure
 
 Examples:
-1)
-In: { “rooms”: [35, 21, 17, 28], “senior”: 10, “junior”: 6 }
+1) In: { “rooms”: [35, 21, 17, 28], “senior”: 10, “junior”: 6 }
 Out: [ {senior: 3, junior: 1}, {senior: 1, junior: 2}, {senior: 2, junior: 0}, {senior: 1, junior: 3} ]
-2)
-In: { “rooms”: [24, 28], “senior”: 11, “junior”: 6 }
+
+2) In: { “rooms”: [24, 28], “senior”: 11, “junior”: 6 }
 Out: [ {senior: 2, junior: 1}, {senior: 2, junior: 1} ]
 
 
