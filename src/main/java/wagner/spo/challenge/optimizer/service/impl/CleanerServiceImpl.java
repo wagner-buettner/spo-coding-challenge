@@ -2,6 +2,7 @@ package wagner.spo.challenge.optimizer.service.impl;
 
 import org.springframework.stereotype.Service;
 import wagner.spo.challenge.optimizer.dto.RoomDTO;
+import wagner.spo.challenge.optimizer.error.exception.CleanerException;
 import wagner.spo.challenge.optimizer.model.Room;
 import wagner.spo.challenge.optimizer.service.CleanerService;
 
@@ -23,19 +24,19 @@ public class CleanerServiceImpl implements CleanerService {
     public Room calculateCleaner(final int roomCapacity, final int seniorCapacity, final int juniorCapacity) {
 
         if (seniorCapacity <= 0) {
-            throw new RuntimeException("Senior must be greater than 0");
+            throw new CleanerException("Senior must be greater than 0");
         }
 
         if (juniorCapacity <= 0) {
-            throw new RuntimeException("Junior must be greater than 0");
+            throw new CleanerException("Junior must be greater than 0");
         }
 
         if (roomCapacity <= 0) {
-            throw new RuntimeException("Room must be greater than 0");
+            throw new CleanerException("Room must be greater than 0");
         }
 
         if (roomCapacity >= 100) {
-            throw new RuntimeException("Room must be less than 100");
+            throw new CleanerException("Room must be less than 100");
         }
 
         // always starts with one senior
