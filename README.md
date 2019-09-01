@@ -30,12 +30,12 @@ Out: [ {senior: 2, junior: 1}, {senior: 2, junior: 1} ]
 * This project uses [Java 8] and [Spring boot]
 
 # API Documentation
-* Swagger-UI is accessible on `http://localhost:8082/swagger-ui.html` for API documentation
+* Swagger-UI is accessible on `http://localhost:8080/swagger-ui.html` for API documentation
 
 # Running Unit Tests
 * Run `mvn clean compile test`
 
 ### Running the project locally ###
 * Inside of the project folder, Run `mvn clean install`, get into the target folder and Run `java -jar optimizer-0.0.1-SNAPSHOT.jar`
-* And then, the application must run properly. Optionaly, it's possible to access it from: http://localhost:8082/swagger-ui.html#/
+* And then, the application must run properly. Optionally, it's possible to access it from: http://localhost:8080/swagger-ui.html#/
 * For developing, you should install lombok plugin in your IDE
