@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "58682001-f6d6-4ef9-a95a-628378869eb7",
+		"name": "SPO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Optimize",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n   \"rooms\":[ 35, 21, 17, 28 ],\n   \"senior\":10,\n   \"junior\":6\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cleaners",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cleaners"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
